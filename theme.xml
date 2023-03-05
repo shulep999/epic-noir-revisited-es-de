@@ -1,335 +1,380 @@
 <!--
-Theme name:  Epic Noir
-Artwork by:  Nico La Rosa (Chicuelo) 
-Coding by:   Nick L (c64-dev)
-Website:     www.chicuelo.com.ar
-Fonts used:  Acre Medium & Bebas Neue Bold
-
-# Thanks and Credits
-Some controllers and graphics used in this theme are created by great artists who kindly agreed to include their art within the theme.
-
-# License
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please see README.md for full details.
+theme name:    Epic Noir (Revisited) (ES-DE Edition)
+created by:    c64-dev & Chicuelo
+ported from:   https://github.com/c64-dev/es-theme-epicnoir
+ported by:     anthonycaccese (change log can be found at https://github.com/anthonycaccese/epic-noir-revisited-es-de/blob/master/readme.md)
+license:       creative commons CC-BY-NC-SA
 -->
 
 <theme>
-<formatVersion>4</formatVersion>
 
-<view name="system">
-    <image name="background" extra="true">
-        <path>./_art/var/dot.png</path>
-        <tile>false</tile>
-        <size>1 1</size>
-        <pos>0 0</pos>
-        <origin>0 0</origin>
-    </image>
-      
-    <image name="poster" extra="true">
-        <path>./_art/posters/${system.theme}.jpg</path>
-        <tile>false</tile>
-        <origin>1 0</origin>
-        <pos>1 0</pos>
-        <size>0 1</size>
-    </image>
-    
-    <image name="indicator_bg" extra="true">
-        <tile>false</tile>
-        <path>./_art/indicators/left-ray.svg</path>
-        <size>0 1</size>
-        <pos>0 0</pos>
-    </image>
-   
-    <image name="indicator" extra="true">
-        <path>./_art/indicators/${system.theme}.png</path>
-        <tile>false</tile>
-        <color>F8F8F8</color>
-        <origin>0 0</origin>
-        <pos>-0.002 0.15</pos>
-        <size>0 0.70</size>
-     </image>
+   <variables>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <fontLogo>./_inc/fonts/BebasNeue.otf</fontLogo>
+      <fontRegular>./_inc/fonts/Acre.otf</fontRegular>
+   </variables>
 
-    <carousel name="systemcarousel">
-        <type>vertical</type>
-        <color>00000000</color>
-        <origin>1 1</origin>
-        <pos>1 1</pos>
-        <size>0.01 0.01</size>
-        <logoScale>1</logoScale>
-        <logoSize>0.01 0.01</logoSize>
-        <maxLogoCount>0</maxLogoCount>
-    </carousel>
-    
-    <text name="sys_line1" extra="true">
-        <fontPath>./_art/BebasNeue.otf</fontPath>
-        <alignment>left</alignment>
-        <forceUppercase>1</forceUppercase>
-        <color>FFFFFF</color>
-    </text>
-    
-    <text name="sys_line2" extra="true">
-        <fontPath>./_art/BebasNeue.otf</fontPath>
-        <alignment>left</alignment>
-        <forceUppercase>1</forceUppercase>
-        <color>FFFFFF</color>
-    </text>
+   <view name="system,gamelist">
+      <image name="background">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>0</zIndex>
+         <color>000000</color>
+      </image>
+      <image name="background-gradient">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/images/background-gradient.svg</path>
+         <zIndex>2</zIndex>
+      </image>
+   </view>
 
-    <text name="shortdescription" extra="true">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <alignment>left</alignment>
-        <forceUppercase>0</forceUppercase>
-        <fontSize>0.021</fontSize>
-        <color>9b9a9a</color>
-        <origin>0 0</origin>
-        <pos>0.12 0.1055</pos>
-        <size>0.320 0.033</size>
-    </text>
+   <view name="system">
+      <image name="system-nav-background">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <path>./_inc/images/system-nav-background.svg</path>
+         <zIndex>4</zIndex>
+      </image>
+      <textlist name="system-nav">
+         <origin>0 0</origin>
+         <pos>0 0.191666666666667</pos>
+         <fontSize>0.033333333333333</fontSize>
+         <lineSpacing>1</lineSpacing>
+         <selectorColor>ffffff</selectorColor>
+         <primaryColor>ffffff00</primaryColor>
+         <secondaryColor>ffffff00</secondaryColor>
+         <selectorHeight>0.033333333333333</selectorHeight>
+         <selectorImagePath>./_inc/images/system-nav-selector.svg</selectorImagePath>
+      </textlist>
+      <text name="system-metadata">
+         <origin>0 0</origin>
+         <lineSpacing>.8</lineSpacing>
+         <fontSize>0.021</fontSize>
+         <fontPath>${fontRegular}</fontPath>
+         <color>8F8F8F</color>
+      </text>
+      <text name="system-title-1-line,system-title-2-lines-row-1,system-title-2-lines-row-2">
+         <origin>0 0</origin>
+         <size>0 0</size>
+         <lineSpacing>1.25</lineSpacing>
+         <fontPath>${fontLogo}</fontPath>
+         <letterCase>uppercase</letterCase>
+         <color>ffffff</color>
+      </text>
+      <text name="system-title-1-line">
+         <fontSize>0.18</fontSize>
+      </text>
+      <text name="system-title-2-lines-row-1">
+         <fontSize>0.048</fontSize>
+      </text>
+      <text name="system-title-2-lines-row-2">
+         <fontSize>0.18</fontSize>
+      </text>
+      <text name="game-count">
+         <origin>0 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.0315</fontSize>
+         <systemdata>gamecount</systemdata>
+         <letterCase>uppercase</letterCase>
+         <color>A3332D</color>
+      </text>
+      <text name="system-description">
+         <origin>0 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.021</fontSize>
+         <lineSpacing>1.18</lineSpacing>
+         <color>8F8F8F</color>
+      </text>
+      <helpsystem name="help">
+         <origin>0 0</origin>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.0315</fontSize>
+         <textColor>666666</textColor>
+         <iconColor>666666</iconColor>
+      </helpsystem>
+      <image name="system-controller">
+         <origin>0 0</origin>
+         <path>./_inc/systems/${system.theme}.png</path>
+      </image>
+      <image name="system-artwork">
+         <origin>1 0</origin>
+         <pos>1 0</pos>
+         <size>0 1</size>
+         <path>./_inc/systems/${system.theme}.jpg</path>
+         <zIndex>1</zIndex>
+      </image>
+   </view>
 
-    <text name="systemInfo">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <alignment>left</alignment>
-        <backgroundColor>00000000</backgroundColor>
-        <forceUppercase>1</forceUppercase>
-        <color>A3332D</color>
-        <origin>0 0</origin>
-        <pos>0.12 0.3611</pos>
-        <size>0.200 0.039</size>
-        <fontSize>0.0315</fontSize>
-    </text>
-    
-    <text name="longdescription" extra="true">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <alignment>left</alignment>
-        <forceUppercase>0</forceUppercase>
-        <fontSize>0.021</fontSize>
-        <color>8F8F8F</color>
- 	<lineSpacing>1.18</lineSpacing>
-        <origin>0 0</origin>
-        <pos>0.12 0.360</pos>
-        <size>0.28 0.20</size>
-    </text>
+   <view name="gamelist">
+      <image name="gamelist-top-border">
+         <origin>0 0</origin>
+         <pos>0 0.081481481481481</pos>
+         <size>1 0.000925925925926</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>0</zIndex>
+         <color>343434</color>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="gamelist-nav-background">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <path>./_inc/images/gamelist-nav-background.svg</path>
+         <zIndex>1</zIndex>
+      </image>
+      <text name="gamelist-nav-title">
+         <origin>0 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.034</fontSize>
+         <text>Select Game</text>
+         <color>F8F8F8</color>
+      </text>
+      <textlist name="gamelist-nav">
+         <pos>0 0.083333333333333</pos><!-- 0 90 -->
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.02962962962963</fontSize>
+         <lineSpacing>1.71875</lineSpacing>
+         <horizontalMargin>0.02864</horizontalMargin>
+         <selectorHeight>0.050925925925926</selectorHeight>
+         <selectorColor>1c1c1c</selectorColor>
+         <selectedColor>F8F8F8</selectedColor>
+         <primaryColor>585858</primaryColor>
+         <secondaryColor>888888</secondaryColor>
+      </textlist>
+      <image name="gamelist-nav-border">
+         <origin>0 0</origin>
+         <size>0 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>0</zIndex>
+         <color>343434</color>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="gamelist-nav-emblem">
+         <origin>1 0</origin>
+         <pos>1 0</pos>
+         <path>./_inc/images/gamelist-nav-emblem.svg</path>
+         <zIndex>1</zIndex>
+      </image>
+      <text name="system-title">
+         <origin>0 0</origin>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.036</fontSize>
+         <letterCase>uppercase</letterCase>
+         <text>${system.fullName}</text>
+         <color>ffffff</color>
+      </text>
+      <text name="custom-collection-name">
+         <fontPath>${fontLogo}</fontPath>
+      </text>
+      <badges name="badges">
+         <origin>0 0</origin>
+         <lines>1</lines>
+         <itemsPerLine>8</itemsPerLine>
+         <horizontalAlignment>right</horizontalAlignment>
+         <slots>all</slots>
+         <customBadgeIcon badge="folder">./_inc/images/badge-folder.svg</customBadgeIcon>
+         <customBadgeIcon badge="broken">./_inc/images/badge-broken.svg</customBadgeIcon>
+         <customBadgeIcon badge="completed">./_inc/images/badge-completed.svg</customBadgeIcon>
+         <customBadgeIcon badge="favorite">./_inc/images/badge-favorite.svg</customBadgeIcon>
+         <customBadgeIcon badge="kidgame">./_inc/images/badge-kidgame.svg</customBadgeIcon>
+         <customBadgeIcon badge="collection">./_inc/images/badge-collection.svg</customBadgeIcon>
+         <customBadgeIcon badge="controller">./_inc/images/badge-controller.svg</customBadgeIcon>
+         <customBadgeIcon badge="altemulator">./_inc/images/badge-altemulator.svg</customBadgeIcon>
+         <controllerSize>0.8</controllerSize>
+         <folderLinkSize>0.8</folderLinkSize>
+      </badges>
+      <image name="system-artwork">
+         <origin>1 0</origin>
+         <pos>1 0</pos>
+         <size>0 1</size>
+         <path>./_inc/systems/${system.theme}.jpg</path>
+         <saturation>0</saturation>
+         <opacity>0.2</opacity>
+         <zIndex>1</zIndex>
+      </image>
+      <video name="game-artwork">
+         <origin>0.5 0.5</origin>
+         <imageType>miximage,screenshot,titlescreen,fanart,cover</imageType>
+         <delay>3</delay>
+      </video>
+      <text name="game-description">
+         <origin>0.5 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.02</fontSize>
+         <metadata>description</metadata>
+         <color>999999</color>
+         <lineSpacing>1</lineSpacing>
+         <container>true</container>
+         <containerStartDelay>6</containerStartDelay>
+      </text>
+      <helpsystem name="help">
+         <origin>0.5 1</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.02</fontSize>
+         <textColor>555555</textColor>
+         <iconColor>555555</iconColor>
+      </helpsystem>
+   </view>
 
-    <image name="buttonA" extra="true">
-		<path>./_art/var/button.svg</path>
-        <tile>false</tile>
-        <origin>0 0</origin>
-        <pos>0.12 0.545</pos>
-        <size>0 0.044</size>
-    </image>
-
-    <helpsystem name="help">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <fontSize>0.02</fontSize>
-        <origin>1 1</origin><!--0 0-->
-        <pos>0 0</pos> <!--0.0890 0.6283-->
-        <textColor>F8F8F8</textColor>
-        <iconColor>F8F8F8</iconColor>
-    </helpsystem>
-
-    <image name="controller" extra="true">
-        <path>./_art/controllers/${system.theme}.png</path>
-        <tile>false</tile>
-        <origin>0 0</origin>
-        <pos>0.12 0.61</pos>
-        <maxSize>0.32 0.32</maxSize>
-    </image>
-</view>
-
-<view name="basic, detailed, video">
-
-    <image name="background" extra="true">
-        <tile>false</tile>
-        <path>./_art/ingame-global-bg.jpg</path>
-        <size>1 1</size>
-        <pos>0 0</pos>
-    </image>
-
-    <textlist name="gamelist">
-        <selectorColor>1c1c1c</selectorColor>
-        <selectedColor>F8F8F8</selectedColor>
-        <selectorHeight>0.05</selectorHeight>
-        <primaryColor>585858</primaryColor>
-        <secondaryColor>888888</secondaryColor>
-        <fontPath>./_art/Acre.otf</fontPath>
-        <alignment>left</alignment>
-        <pos>0 0.0833</pos>
-	    <size>0.323 0.8513</size>
-        <fontSize>0.03</fontSize>
-        <lineSpacing>1.683</lineSpacing>
-        <horizontalMargin>0.02864</horizontalMargin>
-    </textlist>
-    
-    <text name="top_label" extra="true">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <text>Select Game</text>
-        <alignment>left</alignment>
-        <color>F8F8F8</color>
-        <fontSize>0.034</fontSize>
-        <origin>0 0</origin>
-        <pos>0.029 0</pos>
-        <size>0.20 0.08</size>
-    </text>
-    
-    <text name="nameLabel" extra="true">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <alignment>left</alignment>
-        <forceUppercase>1</forceUppercase>
-        <color>ffffff</color>
-        <fontSize>0.036</fontSize>
-        <origin>0 0</origin>
-        <pos>0.429 0</pos>
-        <size>0.40 0.075</size>
-    </text>
-
-    <text name="md_description">
-        <fontPath>./_art/Acre.otf</fontPath>
-	    <color>818181</color>
-        <fontSize>0.02</fontSize>
-	    <alignment>left</alignment>
-        <forceUppercase>0</forceUppercase>
-        <lineSpacing>1</lineSpacing>
-	    <pos>0.429 0.787</pos>
-	    <size>0.464 0.1111</size>
-    </text>
-    
-<!-- Define metadata -->
-    <text name="md_lbl_rating, md_lbl_genre, md_lbl_players">
-        <color>F8F8F8</color>
-        <forceUppercase>0</forceUppercase>
-        <fontPath>./_art/Acre.otf</fontPath>
-        <fontSize>0.0186</fontSize>
-    </text>
-
-    <text name="md_genre, md_players">
-        <color>888888</color>
-        <forceUppercase>0</forceUppercase>
-        <fontPath>./_art/Acre.otf</fontPath>
-        <fontSize>0.0186</fontSize>
-    </text>
-
-<!-- Place metadata --> 
-    <text name="md_lbl_rating">
-        <pos>0.428 0.932</pos>
-        <size>0.06 0.07</size>
-    </text>
-
-    <rating name="md_rating">
-        <pos>0.5 0.957</pos>
-        <size>0 0.020</size>
-        <filledPath>./_art/var/star_filled.svg</filledPath>
-        <unfilledPath>./_art/var/star_hollow.svg</unfilledPath>
-    </rating>
-
-    <text name="md_lbl_players">
-        <pos>0.615 0.932</pos>
-        <size>0.06 0.07</size>
-    </text>
-        
-    <text name="md_players">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <color>888888</color>
-        <fontSize>0.0186</fontSize>
-        <pos>0.672 0.932</pos>
-        <size>0.06 0.07</size>
-    </text>
-        
-    <text name="md_lbl_genre">
-        <pos>0.770 0.932</pos>
-        <size>0.06 0.07</size>
-    </text>
-
-    <text name="md_genre">
-        <pos>0.817 0.932</pos>
-        <size>0.4 0.07</size>
-    </text> 
-        
-<!-- Extra Text Labels. Edit text values if needed.-->
-    <text name="players_lbl_2, btn_a, btn_b, btn_x" extra="true">
-        <fontPath>./_art/Acre.otf</fontPath>
-        <color>888888</color>
-        <fontSize>0.0186</fontSize>
-    </text>       
-
-    <text name="btn_a" extra="true">
-        <text>Enter</text>
-        <pos>0.042 0.933</pos>
-        <size>0.06 0.07</size>
-    </text>   
-        
-    <text name="btn_b" extra="true">
-        <text>Return</text>
-        <pos>0.155 0.933</pos>
-        <size>0.06 0.07</size>
-    </text>   
-        
-    <text name="btn_x" extra="true">
-        <text>Favorite</text>
-        <pos>0.259 0.933</pos>
-        <size>0.06 0.07</size>
-    </text>   
-
-    <text name="players_lbl_2" extra="true">
-        <text>players</text>
-        <pos>0.689 0.932</pos>
-        <size>0.06 0.07</size>
-    </text>       
-
-    <text name="txt_descript" extra="true">
-        <text>Description</text>
-        <fontPath>./_art/Acre.otf</fontPath>
-        <alignment>left</alignment>
-        <fontSize>0.0186</fontSize>
-        <color>ffffff</color>
-        <origin>0 0</origin>
-        <pos>0.429 0.720</pos>
-        <size>0.06 0.07</size>
-    </text> 
-        
-<!-- Hidden Elements -->
-    <text name="shortdescription, longdescription" extra="true">
-        <origin>1 1</origin>
-        <pos>0 0</pos>
-        <color>00000000</color>
-    </text>
-        
-    <text name="md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_publisher, md_publsher">
-        <origin>1 1</origin>
-        <color>00000000</color>
-        <pos>0 0</pos>
-    </text>
-
-    <datetime name="md_releasedate, md_lastplayed">
-        <origin>1 1</origin>
-        <color>00000000</color>
-        <pos>0 0</pos>
-        </datetime>
-        
-    <helpsystem name="help">
-        <origin>1 1</origin>
-        <pos>1 1</pos> 
-    </helpsystem>
-</view>
-
-<view name="basic, detailed, grid">
-    <image name="md_image">
-        <tile>false</tile>
-        <origin>0.5 0.5</origin>
-        <pos>0.66 0.42</pos>
-        <maxSize>0.5 0.6</maxSize>
-    </image>
-
-</view>
-
-<feature supported="video">
-    <view name="video">
-        <video name="md_video">
-            <origin>0.5 0.5</origin>
-            <pos>0.66 0.42</pos>
+   <aspectRatio name="16:9">
+      <view name="system">
+         <image name="system-nav-background">
+            <size>0.0640625 1</size><!-- 123 1080 -->
+         </image>
+         <textlist name="system-nav">
+            <size>0.063541666666667 0.666666666666667</size>
+         </textlist>
+         <text name="system-metadata">
+            <pos>0.12 0.1055</pos>
+            <size>0.320 0.033</size>
+         </text>
+         <text name="system-title-1-line">
+            <pos>0.116 0.130</pos>
+         </text>
+         <text name="system-title-2-lines-row-1">
+            <pos>0.12 0.142</pos>
+         </text>
+         <text name="system-title-2-lines-row-2">
+            <pos>0.116 0.16</pos>
+         </text>
+         <text name="game-count">
+            <pos>0.12 0.3611</pos>
+            <size>0.4 0.039</size>
+         </text>
+         <text name="system-description">
+            <pos>0.12 0.360</pos>
+            <size>0.28 0.20</size>
+         </text>
+         <helpsystem name="help">
+            <pos>0.12 0.545</pos>
+         </helpsystem>
+         <image name="system-controller">
+            <pos>0.12 0.61</pos>
+            <maxSize>0.32 0.32</maxSize>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="gamelist-nav-background">
+            <size>0.322916666666667 1</size><!-- 620 1080 -->
+         </image>
+         <text name="gamelist-nav-title">
+            <pos>0.029 0</pos>
+            <size>0.20 0.08</size>
+         </text>
+         <textlist name="gamelist-nav">
+            <size>0.322916666666667 0.916666666666667</size><!-- 620 990 -->
+         </textlist>
+         <image name="gamelist-nav-border">
+            <pos>0.3234375 0</pos>
+         </image>
+         <image name="gamelist-nav-emblem">
+            <size>0.107291666666667 0.081481481481481</size><!-- 206 88 -->
+         </image>
+         <text name="system-title">
+            <pos>0.342 0.002</pos>
+            <size>0.40 0.075</size>
+         </text>
+         <badges name="badges">
+            <pos>0.57 0.022</pos>
+            <size>0.3 0.036</size>
+         </badges>
+         <video name="game-artwork">
+            <pos>0.661458333333333 0.44</pos>
             <maxSize>0.5 0.6</maxSize>
-            <delay>1.5</delay>
-            <showSnapshotNoVideo>true</showSnapshotNoVideo>
-            <showSnapshotDelay>true</showSnapshotDelay>
-        </video>
-    </view>
-</feature>
+         </video>
+         <text name="game-description">
+            <pos>0.661458333333333 0.787</pos>
+            <size>0.5 0.1111</size>
+         </text>
+         <helpsystem name="help">
+            <pos>0.661458333333333 0.95</pos>
+         </helpsystem>
+      </view>
+   </aspectRatio>
+
+   <aspectRatio name="16:10">
+      <view name="system">
+         <image name="system-nav-background">
+            <size>0.071180555555556 1</size><!-- 123 1080 -->
+         </image>
+         <textlist name="system-nav">
+            <size>0.070601851851852 0.666666666666667</size><!-- 122 -->
+         </textlist>
+         <text name="system-metadata">
+            <pos>0.133333333333333 0.1055</pos>
+            <size>0.355555555555556 0.033</size>
+         </text>
+         <text name="system-title-1-line">
+            <pos>0.128888888888889 0.130</pos>
+         </text>
+         <text name="system-title-2-lines-row-1">
+            <pos>0.133333333333333 0.142</pos>
+         </text>
+         <text name="system-title-2-lines-row-2">
+            <pos>0.128888888888889 0.16</pos>
+         </text>
+         <text name="game-count">
+            <pos>0.133333333333333 0.3611</pos>
+            <size>0.444444444444444 0.039</size>
+         </text>
+         <text name="system-description">
+            <pos>0.133333333333333 0.360</pos>
+            <size>0.311111111111111 0.20</size>
+         </text>
+         <helpsystem name="help">
+            <pos>0.133333333333333 0.545</pos>
+         </helpsystem>
+         <image name="system-controller">
+            <pos>0.133333333333333 0.61</pos>
+            <maxSize>0.355555555555556 0.32</maxSize>
+         </image>
+      </view>
+      <view name="gamelist">
+         <image name="gamelist-nav-background">
+            <size>0.358796296296297 1</size><!-- 620 1080 -->
+         </image>
+         <text name="gamelist-nav-title">
+            <pos>0.032222222222222 0</pos>
+            <size>0.222222222222222 0.08</size>
+         </text>
+         <textlist name="gamelist-nav">
+            <size>0.358796296296297 0.916666666666667</size><!-- 620 990 -->
+         </textlist>
+         <image name="gamelist-nav-border">
+            <pos>0.359375 0</pos>
+         </image>
+         <image name="gamelist-nav-emblem">
+            <size>0.119212962962963 0.081481481481481</size><!-- 206 88 -->
+         </image>
+         <text name="system-title">
+            <pos>0.38 0.002</pos>
+            <size>0.444444444444444 0.075</size>
+         </text>
+         <badges name="badges">
+            <pos>0.524 0.022</pos>
+            <size>0.333333333333333 0.036</size>
+         </badges>
+         <video name="game-artwork">
+            <pos>0.679398148148148 0.44</pos>
+            <maxSize>0.555555555555556 0.6</maxSize>
+         </video>
+         <text name="game-description">
+            <pos>0.679398148148148 0.787</pos>
+            <size>0.555555555555556 0.1111</size>
+         </text>
+         <helpsystem name="help">
+            <pos>0.679398148148148 0.95</pos>
+         </helpsystem>
+      </view>
+   </aspectRatio>
+
+   <include>./_inc/systems/_default.xml</include>
+   <include>./_inc/systems/${system.theme}.xml</include>
 
 </theme>

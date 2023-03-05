@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1990  ·  16-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>TurboGrafx-CD</text>
+      </text>
+      <text name="system-description">
+         <text>Add-on attachment for the TurboGrafx-16. The add-on allows core versions of the console to play TurboGrafx-16 games in CD-ROM format</text>
+      </text>
+   </view>
+
+</theme>

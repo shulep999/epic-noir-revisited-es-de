@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>2001</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Xbox</text>
+      </text>
+      <text name="system-description">
+         <text>The Xbox is a home video game console and the first installment in the Xbox series of video game consoles manufactured by Microsoft</text>
+      </text>
+   </view>
+   
+</theme>

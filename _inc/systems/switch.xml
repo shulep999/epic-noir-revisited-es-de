@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>2017  ·  Handheld Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Nintendo Switch</text>
+      </text>
+      <text name="system-description">
+         <text>The console itself is a tablet that can either be docked for use as a home console or used as a portable device, making it a hybrid console</text>
+      </text>
+   </view>
+   
+</theme>

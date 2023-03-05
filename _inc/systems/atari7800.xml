@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1986  ·  8-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Atari 7800</text>
+      </text>
+      <text name="system-description">
+         <text>Almost fully backward-compatible with the Atari 2600, the 7800 was the first console to have backward compatibility</text>
+      </text>
+   </view>
+   
+</theme>

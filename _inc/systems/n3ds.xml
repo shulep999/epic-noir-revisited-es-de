@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>2010  ·  Handheld Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Nintendo 3DS</text>
+      </text>
+      <text name="system-description">
+         <text>The handheld's most prominent feature is its ability to display stereoscopic 3D effects without the use of 3D glasses or additional accessories</text>
+      </text>
+   </view>
+   
+</theme>

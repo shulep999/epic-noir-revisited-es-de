@@ -1,0 +1,21 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1985  ·  8-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <visible>false</visible>
+      </text>
+      <text name="system-title-2-lines-row-1">
+         <text>Sega Master</text>
+      </text>
+      <text name="system-title-2-lines-row-2">
+         <text>System</text>
+      </text>
+      <text name="system-description">
+         <text>Succeeding the SG-1000, the Master System was released as a direct competitor to the Nintendo Entertainment System (NES)</text>
+      </text>
+   </view>
+   
+</theme>

@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>2011  ·  Handheld Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Playstation Vita</text>
+      </text>
+      <text name="system-description">
+         <text>The console is the successor to the PlayStation Portable, and a part of the PlayStation brand of gaming devices</text>
+      </text>
+   </view>
+   
+</theme>

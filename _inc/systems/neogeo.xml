@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1990  ·  24-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Neo Geo</text>
+      </text>
+      <text name="system-description">
+         <text>Originally launched as the MVS coin-operated arcade machine. It was ranked 19th out of 25 best video game consoles of all time</text>
+      </text>
+   </view>
+   
+</theme>

@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1993  ·  64-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Atari Jaguar</text>
+      </text>
+      <text name="system-description">
+         <text>Sixth and last console to be developed under the Atari brand, Atari marketed the Jaguar as being the first 64-bit video game console</text>
+      </text>
+   </view>
+   
+</theme>

@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>System</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>${system.name}</text>
+      </text>
+      <text name="system-description">
+         <text>Access and quickly play your ${system.fullName} games</text>
+      </text>
+   </view>
+   
+</theme>

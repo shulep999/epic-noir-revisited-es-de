@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1989  ·  8-bit Handheld Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Gameboy</text>
+      </text>
+      <text name="system-description">
+         <text>Nintendo's second handheld system following the Game &amp; Watch series. It mainly competed with Game Gear and Lynx</text>
+      </text>
+   </view>
+   
+</theme>

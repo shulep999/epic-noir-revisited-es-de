@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1991  ·  16-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Sega Mega CD</text>
+      </text>
+      <text name="system-description">
+         <text>CD-ROM add-on to the Genesis, it launched many FMV games, including the infamous Night Trap, which led to the creation of the ESRB</text>
+      </text>
+   </view>
+   
+</theme>

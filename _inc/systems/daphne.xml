@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>Laserdisc Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Daphne</text>
+      </text>
+      <text name="system-description">
+         <text>Converged device and home video game console capable of playing Laserdiscs, Compact Discs, console games, and LD-G karaoke discs</text>
+      </text>
+   </view>
+   
+</theme>

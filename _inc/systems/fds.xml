@@ -1,0 +1,20 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1986  ·  8-bit Console</text>
+      </text><text name="system-title-1-line">
+         <visible>false</visible>
+      </text>
+      <text name="system-title-2-lines-row-1">
+         <text>Famicom Disk</text>
+      </text>
+      <text name="system-title-2-lines-row-2">
+         <text>System</text>
+      </text>
+      <text name="system-description">
+         <text>The Famicom Disk System is a peripheral for Nintendo's Famicom console, released only in Japan</text>
+      </text>
+   </view>
+   
+</theme>

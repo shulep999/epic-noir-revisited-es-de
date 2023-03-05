@@ -1,0 +1,15 @@
+<theme>
+
+   <view name="system">
+      <text name="system-metadata">
+         <text>1988  ·  16-bit Console</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>PC-Engine CD</text>
+      </text>
+      <text name="system-description">
+         <text>Add-on attachment for the PC Engine. The add-on allows core versions of the console to play PC Engine games in CD-ROM format</text>
+      </text>
+   </view>
+
+</theme>

@@ -1,0 +1,30 @@
+<theme>
+   <include>./../theme.xml</include>
+   <view name="system">
+      <text name="system-metadata">
+         <text>All Consoles / Handhelds</text>
+      </text>
+      <text name="system-title-1-line">
+         <text>Now Playing</text>
+      </text>
+      <text name="system-description">
+         <text>Quickly access and complete the games you are actively playing</text>
+      </text>
+      <gameselector name="selector_lastplayed">
+         <selection>lastplayed</selection>
+      </gameselector>
+      <video name="last-played-game">
+         <origin>0 0</origin>
+         <pos>0.588020833333333 0.327777777777778</pos><!-- 1129 354 -->
+         <cropSize>0.274479166666667 0.363888888888889</cropSize><!-- 526 393 -->
+         <imageType>screenshot</imageType>
+         <delay>3</delay>
+         <gameselector>selector_lastplayed</gameselector>
+      </video>
+   </view>
+   <view name="gamelist">
+      <text name="system-title">
+         <text>Now Playing</text>
+      </text>
+   </view>
+</theme>
