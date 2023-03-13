@@ -219,7 +219,7 @@ license:       creative commons CC-BY-NC-SA
       <text name="game-description">
          <origin>0.5 0</origin>
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.021</fontSize>
+         <fontSize>0.026</fontSize>
          <lineSpacing>1.18</lineSpacing>
          <metadata>description</metadata>
          <color>999999</color>
@@ -298,12 +298,12 @@ license:       creative commons CC-BY-NC-SA
             <size>0.3 0.036</size>
          </badges>
          <video name="game-artwork">
-            <pos>0.661458333333333 0.44</pos>
+            <pos>0.661458333333333 0.42</pos>
             <maxSize>0.5 0.6</maxSize>
          </video>
          <text name="game-description">
-            <pos>0.661458333333333 0.787</pos>
-            <size>0.5 0.1111</size>
+            <pos>0.661458333333333 0.78</pos>
+            <size>0.44 0.1111</size>
          </text>
          <helpsystem name="help">
             <pos>0.661458333333333 0.95</pos>
@@ -374,12 +374,12 @@ license:       creative commons CC-BY-NC-SA
             <size>0.333333333333333 0.036</size>
          </badges>
          <video name="game-artwork">
-            <pos>0.679398148148148 0.44</pos>
+            <pos>0.679398148148148 0.42</pos>
             <maxSize>0.555555555555556 0.6</maxSize>
          </video>
          <text name="game-description">
-            <pos>0.679398148148148 0.787</pos>
-            <size>0.555555555555556 0.1111</size>
+            <pos>0.679398148148148 0.78</pos>
+            <size>0.488888888888889 0.1111</size>
          </text>
          <helpsystem name="help">
             <pos>0.679398148148148 0.95</pos>
