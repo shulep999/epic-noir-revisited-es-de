@@ -24,6 +24,7 @@ This is a port of the Epic Noir theme (originally by [c64-dev & Chicuelo](https:
    - `\_inc\systems\controllers\[system.theme].png` - this is the controller artwork displayed on the system view underneath the description.  It should be a transparent PNG.
    - `[system.theme]` in the above paths refers to the name of the theme value for that system in ES-DE.  Please make sure to same your images with that value (example: `tg16.jpg`)
 - While its preferred that you create and submit both images; its not required.  Please feel free to contribute what you are comfortable creating.
+- To see a full list of what is open to be added please check [here](https://github.com/anthonycaccese/epic-noir-revisited-es-de/issues/1)
 - If you have any questions please don't hesistate to ask.
 
 ## **Credit**
