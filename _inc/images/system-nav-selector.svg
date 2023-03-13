@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 122 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(3.38889,0,0,0.25,0,0)">
-        <rect id="Artboard1" x="0" y="0" width="36" height="144" style="fill:none;"/>
-        <clipPath id="_clip1">
-            <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="36" height="144"/>
-        </clipPath>
-        <g clip-path="url(#_clip1)">
-            <g transform="matrix(2.13018,0,0,9,-117.373,-2016)">
-                <rect x="55.1" y="224" width="16.9" height="16"/>
-            </g>
-            <g transform="matrix(0.295082,0,0,4.0678,-0.413115,-1344)">
-                <path d="M62.4,344.2C64.6,344.2 66.4,345.9 66.4,348.1C66.4,350.3 64.6,352 62.4,352C60.2,352 58.4,350.3 58.4,348.1C58.4,345.9 60.2,344.2 62.4,344.2M62.4,342.2C59.1,342.2 56.4,344.8 56.4,348.1C56.4,351.4 59.1,354 62.4,354C65.7,354 68.4,351.4 68.4,348.1C68.4,344.8 65.7,342.2 62.4,342.2Z" style="fill:white;fill-rule:nonzero;"/>
-            </g>
-            <g transform="matrix(0.295082,0,0,4,-0.295082,-20)">
-                <circle cx="62" cy="23" r="5" style="fill:white;"/>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100%" height="100%" viewBox="0 0 122 36" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 61 14.034 C 63.2 14.034 65 15.763 65 18 C 65 20.238 63.2 21.966 61 21.966 C 58.8 21.966 57 20.238 57 18 C 57 15.763 58.8 14.034 61 14.034 M 61 12 C 57.7 12 55 14.644 55 18 C 55 21.356 57.7 24 61 24 C 64.3 24 67 21.356 67 18 C 67 14.644 64.3 12 61 12 Z" style="fill:white;fill-rule:nonzero;"/>
+  <circle cx="61" cy="18" r="5" style="fill:white;"/>
 </svg>

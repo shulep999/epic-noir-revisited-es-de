@@ -8,10 +8,16 @@ license:       creative commons CC-BY-NC-SA
 
 <theme>
 
+   <include>./_inc/systems/metadata-global/_default.xml</include>
+   <include>./_inc/systems/metadata-custom/_default.xml</include>
+   <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+   <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+
    <variables>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <fontLogo>./_inc/fonts/BebasNeue.otf</fontLogo>
       <fontRegular>./_inc/fonts/Acre.otf</fontRegular>
+      <fontMono>./_inc/fonts/PTMono-Regular.ttf</fontMono>
    </variables>
 
    <view name="system,gamelist">
@@ -44,6 +50,7 @@ license:       creative commons CC-BY-NC-SA
          <origin>0 0</origin>
          <pos>0 0.191666666666667</pos>
          <fontSize>0.033333333333333</fontSize>
+         <fontPath>${fontMono}</fontPath>
          <lineSpacing>1</lineSpacing>
          <selectorColor>ffffff</selectorColor>
          <primaryColor>ffffff00</primaryColor>
@@ -57,6 +64,7 @@ license:       creative commons CC-BY-NC-SA
          <fontSize>0.021</fontSize>
          <fontPath>${fontRegular}</fontPath>
          <color>8F8F8F</color>
+         <text>${systemReleaseYear}  ·  ${systemHardwareType}</text>
       </text>
       <text name="system-title-1-line,system-title-2-lines-row-1,system-title-2-lines-row-2">
          <origin>0 0</origin>
@@ -89,6 +97,8 @@ license:       creative commons CC-BY-NC-SA
          <fontSize>0.021</fontSize>
          <lineSpacing>1.18</lineSpacing>
          <color>8F8F8F</color>
+         <text>${systemDescription}</text>
+         <verticalAlignment>top</verticalAlignment>
       </text>
       <helpsystem name="help">
          <origin>0 0</origin>
@@ -98,14 +108,16 @@ license:       creative commons CC-BY-NC-SA
          <iconColor>666666</iconColor>
       </helpsystem>
       <image name="system-controller">
-         <origin>0 0</origin>
-         <path>./_inc/systems/${system.theme}.png</path>
+         <origin>0 0.5</origin>
+         <path>./_inc/systems/controllers/${system.theme}.png</path>
+         <default>./_inc/systems/controllers/_default.png</default>
       </image>
       <image name="system-artwork">
          <origin>1 0</origin>
          <pos>1 0</pos>
          <size>0 1</size>
-         <path>./_inc/systems/${system.theme}.jpg</path>
+         <path>./_inc/systems/artwork/${system.theme}.jpg</path>
+         <default>./_inc/systems/artwork/_default.jpg</default>
          <zIndex>1</zIndex>
       </image>
    </view>
@@ -166,7 +178,6 @@ license:       creative commons CC-BY-NC-SA
          <fontPath>${fontLogo}</fontPath>
          <fontSize>0.036</fontSize>
          <letterCase>uppercase</letterCase>
-         <text>${system.fullName}</text>
          <color>ffffff</color>
       </text>
       <text name="custom-collection-name">
@@ -186,6 +197,7 @@ license:       creative commons CC-BY-NC-SA
          <customBadgeIcon badge="collection">./_inc/images/badge-collection.svg</customBadgeIcon>
          <customBadgeIcon badge="controller">./_inc/images/badge-controller.svg</customBadgeIcon>
          <customBadgeIcon badge="altemulator">./_inc/images/badge-altemulator.svg</customBadgeIcon>
+         <badgeIconColor>818181</badgeIconColor>
          <controllerSize>0.8</controllerSize>
          <folderLinkSize>0.8</folderLinkSize>
       </badges>
@@ -193,7 +205,8 @@ license:       creative commons CC-BY-NC-SA
          <origin>1 0</origin>
          <pos>1 0</pos>
          <size>0 1</size>
-         <path>./_inc/systems/${system.theme}.jpg</path>
+         <path>./_inc/systems/artwork/${system.theme}.jpg</path>
+         <default>./_inc/systems/artwork/_default.jpg</default>
          <saturation>0</saturation>
          <opacity>0.2</opacity>
          <zIndex>1</zIndex>
@@ -206,10 +219,10 @@ license:       creative commons CC-BY-NC-SA
       <text name="game-description">
          <origin>0.5 0</origin>
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.02</fontSize>
+         <fontSize>0.021</fontSize>
+         <lineSpacing>1.18</lineSpacing>
          <metadata>description</metadata>
          <color>999999</color>
-         <lineSpacing>1</lineSpacing>
          <container>true</container>
          <containerStartDelay>6</containerStartDelay>
       </text>
@@ -248,15 +261,15 @@ license:       creative commons CC-BY-NC-SA
             <size>0.4 0.039</size>
          </text>
          <text name="system-description">
-            <pos>0.12 0.360</pos>
-            <size>0.28 0.20</size>
+            <pos>0.12 0.43</pos>
+            <size>0.28 0.08</size>
          </text>
          <helpsystem name="help">
             <pos>0.12 0.545</pos>
          </helpsystem>
          <image name="system-controller">
-            <pos>0.12 0.61</pos>
-            <maxSize>0.32 0.32</maxSize>
+            <pos>0.12 0.78</pos>
+            <maxSize>0.32 0.30</maxSize>
          </image>
       </view>
       <view name="gamelist">
@@ -324,15 +337,15 @@ license:       creative commons CC-BY-NC-SA
             <size>0.444444444444444 0.039</size>
          </text>
          <text name="system-description">
-            <pos>0.133333333333333 0.360</pos>
-            <size>0.311111111111111 0.20</size>
+            <pos>0.133333333333333 0.43</pos>
+            <size>0.311111111111111 0.08</size>
          </text>
          <helpsystem name="help">
             <pos>0.133333333333333 0.545</pos>
          </helpsystem>
          <image name="system-controller">
-            <pos>0.133333333333333 0.61</pos>
-            <maxSize>0.355555555555556 0.32</maxSize>
+            <pos>0.133333333333333 0.78</pos>
+            <maxSize>0.355555555555556 0.30</maxSize>
          </image>
       </view>
       <view name="gamelist">
@@ -374,7 +387,28 @@ license:       creative commons CC-BY-NC-SA
       </view>
    </aspectRatio>
 
-   <include>./_inc/systems/_default.xml</include>
-   <include>./_inc/systems/${system.theme}.xml</include>
+   <view name="all">
+      <sound name="systembrowse">
+         <path>./_inc/sounds/systembrowse.wav</path>
+      </sound>
+      <sound name="quicksysselect">
+         <path>./_inc/sounds/quicksysselect.wav</path>
+      </sound>
+      <sound name="select">
+         <path>./_inc/sounds/select.wav</path>
+      </sound>
+      <sound name="back">
+         <path>./_inc/sounds/back.wav</path>
+      </sound>
+      <sound name="scroll">
+         <path>./_inc/sounds/scroll.wav</path>
+      </sound>
+      <sound name="favorite">
+         <path>./_inc/sounds/favorite.wav</path>
+      </sound>
+      <sound name="launch">
+         <path>./_inc/sounds/launch.wav</path>
+      </sound>
+   </view>
 
 </theme>

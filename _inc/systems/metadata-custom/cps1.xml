@@ -1,0 +1,7 @@
+<theme>
+   <view name="system">
+      <text name="system-title-1-line">
+         <text>CPS I</text>
+      </text>
+   </view>
+</theme>
