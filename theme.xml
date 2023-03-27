@@ -99,6 +99,8 @@ license:       creative commons CC-BY-NC-SA
          <color>8F8F8F</color>
          <text>${systemDescription}</text>
          <verticalAlignment>top</verticalAlignment>
+         <container>true</container>
+         <containerScrollSpeed>0.3</containerScrollSpeed>
       </text>
       <helpsystem name="help">
          <origin>0 0</origin>
@@ -228,6 +230,7 @@ license:       creative commons CC-BY-NC-SA
          <color>999999</color>
          <container>true</container>
          <containerStartDelay>6</containerStartDelay>
+         <containerScrollSpeed>0.6</containerScrollSpeed>
       </text>
       <helpsystem name="help">
          <origin>0.5 1</origin>
