@@ -37,6 +37,14 @@ license:       creative commons CC-BY-NC-SA
          <path>./_inc/images/background-gradient.svg</path>
          <zIndex>2</zIndex>
       </image>
+      <helpsystem name="help">
+         <originDimmed>0.5 0</originDimmed>
+         <posDimmed>0.5 0.94</posDimmed>
+         <textColorDimmed>cccccc</textColorDimmed>
+         <iconColorDimmed>cccccc</iconColorDimmed>
+         <fontSizeDimmed>0.03</fontSizeDimmed>
+         <opacityDimmed>1.0</opacityDimmed>
+      </helpsystem>
    </view>
 
    <view name="system">
@@ -234,8 +242,8 @@ license:       creative commons CC-BY-NC-SA
       </text>
       <helpsystem name="help">
          <origin>0.5 1</origin>
-         <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.02</fontSize>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.024</fontSize>
          <textColor>555555</textColor>
          <iconColor>555555</iconColor>
       </helpsystem>
