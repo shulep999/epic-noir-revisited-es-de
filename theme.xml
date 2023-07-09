@@ -283,8 +283,8 @@ license:       creative commons CC-BY-NC-SA
             <pos>0.12 0.545</pos>
          </helpsystem>
          <image name="system-controller">
-            <pos>0.12 0.78</pos>
-            <maxSize>0.32 0.30</maxSize>
+            <pos>0.12 0.76</pos>
+            <maxSize>0.22 0.26</maxSize>
          </image>
       </view>
       <view name="gamelist">
