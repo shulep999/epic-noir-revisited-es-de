@@ -1,14 +1,9 @@
 <theme>
    <variables>
       <systemName>Famicom</systemName>
-      <systemDescription>The Family Computer (ファミリーコンピュータ) or Famicom (ファミコン) hit the Japanese gaming market in 1983. The brainchild of Masayuki Uemura, Famicom was Nintendo’s first cartridge-based home video game console. It became an instant hit, with game titles like legendary designer Shigeru Miyamoto’s arcade classic Donkey Kong fueling sales.
+      <systemDescription>Nintendo Entertainment System (NES) в Северной Америке и Европе, Famicom (от FAMIly COMputer — семейный компьютер) в Японии, Hyundai Comboy в Южной Корее, Samurai в Индии — восьмибитная игровая система, популярная в середине 1980-х и начале 1990-х годов.
 
-The Famicom began life as the “GameCom” before system designer Masayuki Uemura’s wife suggested the moniker we know and love today. During development several ideas were bandied about, including the concept of creating a powerful home computer complete with a keyboard and disk drive, but ultimately the console became the diminutive red-and-white wonder that has become so iconic over the years; the colour scheme was apparently chosen by Nintendo president Hiroshi Yamauchi after he spotted a billboard advertisement which used the same hues.
-
-The Famicom was designed to be both cheap and impressive. Nintendo aimed to be thrifty where possible but did not want to sacrifice performance. The aim was for their console to be unsurpassed in terms of quality and cost-effectiveness by their competitors for at least a year, if not longer. The console was purposefully designed to look like a toy – with a design scheme similar to the Game and Watch series of portable games they had released a couple of years prior to the Famicom.
-
-The only direct competition to the Famicom was Sega’s SG-1000, which the Famicom was easily outselling. Within two years the Famicom had already sold 2.5 million units in Japan. This success emboldened Nintendo, who started to look towards international markets. Overall Nintendo sold more than 10 million units in Japan.</systemDescription>
-      <systemDescriptionSource>https://www.museumofplay.org/blog/first-there-was-famicom/, https://retrogaming.tech.blog/2016/12/03/a-history-of-the-nintendo-famicom/, https://www.nintendolife.com/news/2013/07/feature_the_history_of_the_famicom_the_console_that_changed_nintendos_fortunes</systemDescriptionSource>
+      Впервые консоль появилась на японском рынке в 1983 году под названием Famicom, а затем, переименованная в NES, вышла в Европе и США в 1985 году. Новинка оказалась исключительно удачной и сумела завоевать практически весь американский и японский рынок. Консоль появилась с большим пакетом игр, среди которых самым известным и продаваемым стало семейство игр Super Mario Bros.. Марио стал талисманом корпорации Nintendo. Всего, по официальным данным, было продано более 60 млн приставок и более 500 млн игр.</systemDescription>
       <systemManufacturer>Nintendo</systemManufacturer>
       <systemReleaseYear>1983</systemReleaseYear>
       <systemReleaseDate>1983-07-15</systemReleaseDate>
@@ -20,5 +15,5 @@ The only direct competition to the Famicom was Sega’s SG-1000, which the Famic
       <systemColorPalette2>E6E7E8</systemColorPalette2>
       <systemColorPalette3>C0A987</systemColorPalette3>
       <systemColorPalette4>AA1A41</systemColorPalette4>
-   </variables>
+	  <systemCartSize>105-170</systemCartSize>    </variables>
 </theme>
